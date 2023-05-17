@@ -1,9 +1,8 @@
-function flagdata() {
-    const countries = JSON.parse(this.responseText);
-    countries.forEach(co => console.log(co.flags));
-}
+let obj1 = {age:5,name:"Person1"};
+let obj2 = {name:"Person1",age:5};
 
-var request = new XMLHttpRequest();
-request.addEventListener("load", flagdata);
-request.open("GET", "https://restcountries.com/v3.1/all");
-request.send();
+if(obj1.age == obj2.age && obj1.name == obj2.name){
+    console.log("Equal");
+} else {
+    console.log("NotEqual");
+}
