@@ -1,0 +1,70 @@
+1.For the given JSON itreate over all the loops(for.for in,for of.forEach).
+Answer: var vechile = [
+    {"Car":{
+    "Model": "Audi",
+    "Color": "Red",
+    },
+    "Bike":{
+    "Model":"RoyalEnfield",
+    "Color":"Black",
+    }
+   }
+]
+
+for(let i=0;i<vechile.length;i++){
+    var obj = vechile[i];
+    console.log(obj.Bike);
+}
+
+for(let res of vechile){
+   console.log(res.Car);
+}
+
+for(let arr in vechile){
+    if(vechile.hasOwnProperty(arr))
+    {
+       console.log(vechile[arr]);
+    }
+}
+
+vechile.forEach(element => console.log(element.Car))
+
+2.Create your own resume data in JSON Format?
+Answer: var resume = {
+   "Name":"BADHRIRAJAN",
+   "Date of Birth":"02/06/1999",
+   "Qualification":"B.Tech",
+   "CGPA": 8.02,
+   "Skills":["C","C++","JAVASCRIPT","HTML","CSS","PYTHON"],
+   "Address":{
+     "Street1":"Kodangi Ramar Street",
+     "Street2":"JBR Mahal Back Side",
+     "City":"Usilampatti",
+     "State":"TamilNadu",
+     "Pincode":625532,
+   }
+}
+
+
+console.log(resume);
+console.log(resume.Name);
+console.log(resume.Skills);
+console.log(resume.Address.City);
+
+3.Difference between window,screen and document?
+Answer: i) Window: *) Window object is a browser environment which run only within the browser. 
+           *) We can access window by window only.
+           *) Global object,function,variables of javascript are members of window.
+           *) Properties of the window are not accessed by document object.
+           *) Window is the part of BOM (Browser object Model) not DOM.
+        
+ii) Document: *) Document object is loaded inside the window.
+              *) All HTML tags are part of document object.
+              *) Document is the part of both BOM and DOM.
+              *) we can access the document by window.document
+              *) Document properties also can be accessed by windows.document.property_name.
+
+iii) Screen: *)Screen is used to display the output of the response.
+             *)Screen size can be adjusted as per user requirement.
+             *)We can adjust the height and width of the screen.
+             *)Screen is also a window property.
