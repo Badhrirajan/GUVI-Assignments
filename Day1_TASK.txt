@@ -1,0 +1,17 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2?
+Answer: HTTP1.1 will send request through tcp connection one by one and receive response by one by one.
+        HTTP2 will send multiple response at a singe time thorugh tcp connection and receive multiple response at a time.
+        
+        Server which send response to the client device if it is request by client. In HTTP2 is advanced with push content to cilent device before cilent request for it.
+        
+        Small files will load more faster than larger file. To improve the speed both HTTP1.1 and HTTP2 will compress the HTTP message. 
+        But in HTTP2 advanced compression method called HPACK that elimate redundant in HTTP packets. And Allows us to load the webpage faster.
+        
+        In HTTP2 we can control the prioritaization its not possible in HTTP1.1.
+        HTTP2 feature for prioritaization is called weighted prioritization this allows us to decide which page should load first.
+        
+2.Write a blog about objects and its internal representation in Javascript?
+Answer: In Javascript object is the most important data type and its buliding block for modern javascript. Objects are more complex and each object may contain any combination of primitive data types and reference of data type.
+        Object is a reference data type. Variable are assigned to a given reference value. That reference value is points to the location where its stored in object. 
+        In javascript object may be defiened as unordered collection of related data in the form of "keys:value".
+        We can access the object properties with simple dot (.) notation.
