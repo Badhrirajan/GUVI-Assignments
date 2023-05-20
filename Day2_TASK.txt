@@ -1,4 +1,4 @@
-3.Write a blog on difference between window and document object?
+1.Write a blog on difference between window and document object?
 Answer: i) Window: *) Window object is a browser environment which run only within the browser. 
            *) We can access window by window only.
            *) Global object,function,variables of javascript are members of window.
