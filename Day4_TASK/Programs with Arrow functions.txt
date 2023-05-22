@@ -1,0 +1,73 @@
+2.a) let arr = [1,2,3,4,5,6,7,8,9,10];
+
+var odd = () => {
+    for (let i=0;i<arr.length;i++){
+        if(arr[i] % 2 != 0) {
+            console.log(arr[i]);
+        }
+    }
+}
+
+odd();
+
+2.b) var string = (input) => {
+   input = input.toLowerCase().split(' ');
+   console.log(input);
+   let output = [];
+   for(let i=0;i<input.length;i++){
+   let firstlet = input[i].charAt(0).toUpperCase();
+   let rest = input[i].slice(1).toLowerCase();
+   let cap = firstlet + rest;
+   output.push(cap);
+}
+
+output = output.join(' ');
+console.log(output);
+}
+
+string("am learning fsd program thorugh guvi");
+
+2.c) let arr = [1,2,3,4,5,6,7,8,9,10];
+let sum = 0;
+
+var sumofnum = () => {
+   for(let i=0;i<arr.length;i++){
+       sum = sum + arr[i];
+   }
+   console.log(sum);
+}
+
+sumofnum();
+
+2.d) var prime = (arr) => {
+    let primearr = [];
+    arr.forEach(num => {
+        let fact = 0;
+        for(let i=0;i<=num;i++){
+            if(num%i === 0){
+                fact++
+            }
+        }
+        if(fact === 2){
+            primearr.push(num)
+        }
+    })
+    console.log(primearr);
+}
+
+prime([2,3,4,6,7,9])
+
+2.e) let a = ['MADAM','NITIN','COFFEE','SKY'];
+let b = ['MADAM','NITIN','EEFFOC','YKS'];
+
+var palindrome = () => {
+    for(let i=0;i<a.length;i++){
+       if(a[i] == b[i]){
+           console.log("This is a palindrome");
+       } else {
+          console.log("This is not a palindrome");
+       }
+    }
+}    
+
+palindrome();
