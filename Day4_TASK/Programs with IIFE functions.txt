@@ -1,0 +1,93 @@
+1.a) let arr = [1,2,3,4,5,6,7,8,9,10];
+
+(function (){
+    for (let i=0;i<arr.length;i++){
+        if(arr[i] % 2 != 0) {
+            console.log(arr[i]);
+        }
+    }
+})()
+
+1.b) (function (input){
+   input = input.toLowerCase().split(' ');
+   let output = [];
+   for(let i=0;i<input.length;i++){
+   let firstlet = input[i].charAt(0).toUpperCase();
+   let rest = input[i].slice(1).toLowerCase();
+   let cap = firstlet + rest;
+   output.push(cap);
+}
+
+output = output.join(' ');
+console.log(output);
+})("am learning fsd program thorugh guvi");
+
+1.c) let arr = [1,2,3,4,5,6,7,8,9,10];
+let sum = 0;
+
+(function () {
+   for(let i=0;i<arr.length;i++){
+       sum = sum + arr[i];
+   }
+   console.log(sum);
+})()
+
+1.d) (function (arr) {
+    let primearr = [];
+    arr.forEach(num => {
+        let fact = 0;
+        for(let i=0;i<=num;i++){
+            if(num%i === 0){
+                fact++
+            }
+        }
+        if(fact === 2){
+            primearr.push(num)
+        }
+    })
+    console.log(primearr);
+})([2,3,4,6,7,9])
+
+1.e) let a = ['MADAM','NITIN','COFFEE','SKY'];
+let b = ['MADAM','NITIN','EEFFOC','YKS'];
+
+(function () {
+    for(let i=0;i<a.length;i++){
+       if(a[i] == b[i]){
+           console.log("This is a palindrome");
+       } else {
+          console.log("This is not a palindrome");
+       }
+    }
+})()
+
+1.f) (function (arr,arr1) {
+    let con = arr.concat(arr1);
+    let median = Math.floor(con.length / 2);
+    if(median % 2 === 0){
+      console.log((con[median-1]+con[median]) / 2);
+    } else {
+       console.log(con[median]);
+    }
+})([1,2,3],[4,5,6])
+
+1.g) let a = [1,2,4,5,6,2,1]
+
+let  b = [];
+
+(function () {
+   for(let i=0;i<a.length;i++){
+      if(b.indexOf(a[i]) === -1){
+         b.push(a[i]);
+      }
+   }
+   console.log(b);
+})()
+
+1.h) (function (arr,k) {
+   let temp = arr.splice(arr.length-k);
+   for(let i=0;i<temp.length;i++){
+     arr.splice(i,0,temp[i]);
+   }
+   console.log(arr);
+})([5,6,3,2,9,1],3)
