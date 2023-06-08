@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <p id="tag-margin"><b>Name</b><span style="color: red; padding-left: 2px;">*</span></p>
+    </div>
+    <div class="container-fluid">
+        <input type="text">
+        <input type="text" style="margin-left: 10px">
+    </div>
+    <div class="container-fluid d-flex">
+        <p>First</p>
+        <p style="margin-left: 170px;">Last</p>
+    </div>
+    <div class="container-fluid">
+       <p id="tag-margin"><b>Email</b><span style="color: red; padding-left: 2px;">*</span></p>
+    </div>
+    <div class="container-fluid">
+        <input type="email" style="width:30%">
+    </div>
+    <div class="container-fluid" style="margin-top: 10px">
+        <p id="tag-margin"><b>Your Experience</b><span style="color: red; padding-left: 2px;">*</span></p>
+    </div>
+    <div class="container-fluid">
+        <img src="./star.png" width="40px" height="40px"><img src="./star.png" width="40px" height="40px"><img src="./star.png" width="40px" height="40px"><img src="./star.png" width="40px" height="40px"><img src="./star.png" width="40px" height="40px">
+
+        <p class="font-change">Overall, how would you rate your experience with us?</p>
+    </div>
+    <div class="container-fluid">
+        <p><b>How are you satisfied with us</b><span style="color: red; padding-left: 2px;">*</span></p>
+    </div>
+    <table class="table-fix">
+        <tr>
+            <td></td>
+            <th>Very Unsatisfied</th>
+            <th>Unsatsified</th>
+            <th>Netural</th>
+            <th>Satisfied</th>
+            <th>Very Satisfied</th>
+        </tr>
+        <tr id="row-color">
+            <td>Purchase</td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+        </tr>
+        <tr id="row-color1">
+            <td>Service</td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+        </tr>
+        <tr id="row-color">
+            <td>Company Overall</td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+        </tr>
+    </table>
+    <div class="container-fluid mt-2">
+        <p><b>How likely are you to</b><span style="color: red; padding-left: 2px;">*</span></p>
+    </div>
+    <table class="table-fix">
+        <tr>
+            <th></th>
+            <th>Very Unlikely</th>
+            <th>unlikely</th>
+            <th>Netural</th>
+            <th>likely</th>
+            <th>Very likely</th>
+        </tr>
+        <tr id="row-color">
+            <td>Buy from us again</td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+        </tr>
+        <tr id="row-color1">
+            <td>Recommend our products to others
+            </td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+        </tr>
+        <tr id="row-color">
+            <td>Recommend our company to others</td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+            <td><input type="radio"></td>
+        </tr>
+    </table>
+    <div class="container-fluid mt-2">
+        <p><b>Additional Comments or suggestions</b></p>
+        <textarea style="width:100%; height:100px"></textarea>
+    </div>
+    <button>Submit</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+</body>
+</html>

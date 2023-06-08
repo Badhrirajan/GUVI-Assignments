@@ -1,0 +1,30 @@
+#tag-margin{
+    margin-bottom: 0;
+}
+
+.container-fluid{
+    >.font-change{
+        margin-top: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+.container-fluid{
+    >.d-flex{
+        >p{
+            margin-left: 200px;
+        }
+    }
+}
+
+#row-color{
+    background-color: #d1cfcf;
+}
+
+#row-color1{
+    background-color: #FFFFFF;
+}
+
+.table-fix{
+    width: 100%;
+}
