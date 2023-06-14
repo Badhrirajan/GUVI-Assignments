@@ -5,10 +5,10 @@ function getmakeupdetails(result = []){
         makeupcard.setAttribute('class','text-center')
         makeupcard.setAttribute('id','content-card');
         makeupcard.innerHTML = `<img src="${ele.image_link}" class="rounded" alt="${ele.name}">
-        <p class="card-text">Name: ${ele.name}</p>
-        <p class="card-text">Brand: ${ele.brand}</p>
+        <p class="card-text"><b>Name: ${ele.name}</b></p>
+        <p class="card-text"><b>Brand: ${ele.brand}</b></p>
         <p class="card-text">Description: ${ele.description}</p>
-        <p class="card-text">Price: ${ele.price}</p>
+        <p class="card-text"><mark>Price: ${ele.price}</mark></p>
         <a href="${ele.product_link}" class="btn btn-primary" target="_blank">Click here to buy!!</a>
       </div>`;
         makeupdetails.appendChild(makeupcard);
@@ -35,6 +35,7 @@ function nextbuttondetails(result = []){
     container.append(result)
     container.innerHTML = "";
     slicedcontent(array,firstpage,lastpage);
+    nextpage();
 }
 
 function prevbuttondetails(result = []){
@@ -45,6 +46,19 @@ function prevbuttondetails(result = []){
     container1.append(result)
     container1.innerHTML = "";
     slicedcontent(array,firstpage,lastpage);
+    prevpage();
+}
+
+function nextpage(){
+    if(pagenumber > 10){
+        location.reload(prevbuttondetails())
+    }
+}
+
+function prevpage(){
+    if(pagenumber <= 0){
+        location.reload(nextbuttondetails())
+    }
 }
 
 function slicedcontent(result = [], firstpage = 0, lastpage = 0){
