@@ -7,8 +7,8 @@ function getmakeupdetails(result = []){
         makeupcard.innerHTML = `<img src="${ele.image_link}" class="rounded" alt="${ele.name}">
         <p class="card-text"><b>Name: ${ele.name}</b></p>
         <p class="card-text"><b>Brand: ${ele.brand}</b></p>
-        <p class="card-text"><i>Description: ${ele.description}</i></p>
-        <p class="card-text"><mark>Price: ${ele.price}</mark></p>
+        <p class="card-text"><b>Description: ${ele.description}</b></p>
+        <p class="card-text"><b><mark>Price: ${ele.price}</mark></b></p>
         <a href="${ele.product_link}" class="btn btn-primary" target="_blank">Click here to buy!!</a>
       </div>`;
         makeupdetails.appendChild(makeupcard);
