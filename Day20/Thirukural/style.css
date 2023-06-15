@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body{
+    background-image: linear-gradient(to right top, #b7a11e, #52af4e, #00af9b, #00a4db, #128deb);
+}
+
+.card{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    >.card-header{
+        background-color: #ADD8E6;
+        color: black;
+    }
+    >.card-body{
+        background-color: #008B8B;
+        color: white;
+    }
+}
+

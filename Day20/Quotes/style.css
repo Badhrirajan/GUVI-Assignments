@@ -1,0 +1,45 @@
+*{
+    border: 0px;
+    margin: 0px;
+    outline: none;
+}
+body{
+    background-image: url("./think.jpg");
+    background-size: 100%;
+}
+
+h2{
+    background: linear-gradient(90deg, rgb(164, 193, 21), rgba(198, 139, 21, 0.864));
+}
+
+.mt-10{
+    margin-top: 100px;
+}
+
+.mx-20{
+    margin-left: 45%;
+}
+
+.rectangle{
+    width: 50%;
+    height: 100px;
+    background: linear-gradient(60deg,rgb(122, 84, 134),rgb(149, 25, 139));
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    margin-left: 25%;
+}
+
+p{
+    font-style: italic;
+}
+
+#btn{
+    border-radius: 20px;
+    background: linear-gradient(45deg,rgba(21, 176, 104, 0.758),rgb(11, 173, 176));
+    color: black;
+}
+
+#btn:hover{
+    background: linear-gradient(45deg, rgb(73, 178, 73),rgb(12, 159, 12));
+}
