@@ -1,0 +1,31 @@
+*{
+    border: none;
+    margin: 0px;
+    outline: none;
+    font-family: lora;
+}
+
+body{
+    background: linear-gradient(75deg, rgb(18, 138, 159),rgba(216, 213, 213, 0.768));
+}
+
+.table-responsive{
+    width: 50%;
+    margin-left: 25%;
+}
+
+#design{
+    border: 2px solid black;
+    >tbody{
+        >tr{
+            border: 2px solid black;
+            >th{
+                padding: 10px;
+                border: 2px solid black;
+            }
+            >td{
+                border: 2px solid black;
+            }
+        }
+    }    
+}
