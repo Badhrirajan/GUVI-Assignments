@@ -1,0 +1,29 @@
+1.Find all the information about each products
+Query:db.products.find() -> To get all details about product
+
+2.Find the product price which are between 400 to 800
+Query:db.products.find({product_price: {$gt: 400, $lt: 800}}) -> To get details where product_price is between 400 and 800
+
+3.Find the product price which are not between 400 to 600
+Query:db.products.find({product_price: {$not: {$gt: 400, $lt: 600}}}) -> To get details where product_price is not between 400 to 600
+
+4.List the four product which are grater than 500 in price
+Query:db.products.find({product_price: {$gt: 500}}) -> To get product details where product price is greater than 500
+
+5.Find the product name and product material of each products
+Query:db.products.find().projection({product_name: 1,product_material: 1}) -> To get details about product_name and product_material using projection function with id
+
+6.Find the product with a row id of 10
+Query:db.products.find({id: "10"}) -> To get data where id is matched to 10
+
+7.Find only the product name and product material
+Query:db.products.find().projection({_id: 0,product_name: 1,product_material: 1}) -> To get details about product_name and product_material using projection function without id
+
+8.Find all products which contain the value of soft in product material
+Query:db.products.find({product_material: "Soft"}) -> To get details where product_material is equal to Soft
+
+9.Find products which contain product color indigo  and product price 492.00
+Query:db.products.find().projection({product_price: 492,product_color: "indigo"}) -> To get all products details where product_color equal to indigo and price equal to 492
+
+10.Delete the products which product price value are same
+Query:db.products.deleteMany({product_price: 36}) -> Delete records where product_price equal to 36
