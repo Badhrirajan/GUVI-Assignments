@@ -23,7 +23,7 @@ Query:db.products.find().projection({_id: 0,product_name: 1,product_material: 1}
 Query:db.products.find({product_material: "Soft"}) -> To get details where product_material is equal to Soft
 
 9.Find products which contain product color indigo  and product price 492.00
-Query:db.products.find().projection({product_price: 492,product_color: "indigo"}) -> To get all products details where product_color equal to indigo and price equal to 492
+Query:db.products.find({$and: [{product_color: "indigo"},{product_price: 492}]}) -> To get all products details where product_color equal to indigo and price equal to 492
 
 10.Delete the products which product price value are same
 Query:db.products.deleteMany({product_price: 36}) -> Delete records where product_price equal to 36
