@@ -1,0 +1,23 @@
+1.Find all the topics and tasks which are thought in the month of October
+Query:db.Topics.aggregate([{
+    $match: {month:"october"}},
+    {$lookup: {from: "Tasks", localField:'_id',foreignField:'topic',as:'task'}}])
+
+2.Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+Query: db.Company_Drive.find({appeared_date: {$gt: "15 OCT-2010", $lt: "31 OCT-2010}}).projection({company:1})
+
+3.Find all the company drives and students who are appeared for the placement.
+Query:db.Users.aggregate([{
+    $match: {Placement:"Present"}},
+    {$lookup: {from: "Company_Drive", localField:'_id',foreignField:'user_attended',as:'Placement_attended'}}])
+
+4.Find the number of problems solved by the user in codekata
+Query:db.CodeKata.find().projection({_id:0,name:1,ProblemSolved:1})
+
+5.Find all the mentors with who has the mentee's count more than 15
+Query:db.Mentors.find({batch_strength: {$gt: 15}})
+
+6.Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+Query:db.Attendance.aggregate([{
+    $match: {attendance:"absent"}},
+    {$lookup: {from: "Users",localField: "_id",foreignField:"Attendance",as:"class_attendance"}}])
